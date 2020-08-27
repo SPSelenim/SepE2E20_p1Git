@@ -1,0 +1,8 @@
+package com.stc.testProject.testProject;
+
+
+public class InvokeApp {
+  @Test
+  public void f() {
+  }
+}
