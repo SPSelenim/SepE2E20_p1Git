@@ -2,7 +2,7 @@ package com.stc.testProject.testProject;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-//Date
+//Date : 28-08
 public class Adduser extends InvokeApp {
   @Test
   public void f() {
@@ -15,7 +15,7 @@ public class Adduser extends InvokeApp {
 	 Thread.sleep(2000);
 	 driver.findElement(By.id("PWD")).sendKeys("Helllooooo");
 	 Thread.sleep(2000);
-driver.quit();
+	 driver.quit();
 	 }
 	 catch(Exception e)
 	 {
