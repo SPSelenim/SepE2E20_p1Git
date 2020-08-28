@@ -10,16 +10,23 @@ public class InvokeApp {
 	String AppPath="E:\\SeleniumTraining1\\TestingApp.html";
 	String ChrPath="E:\\SeleniumTraining1\\Drivers\\chromedriver.exe";
 
+	public void init()
+	{
+		System.setProperty("webdriver.chrome.driver", ChrPath);
+			driver=new ChromeDriver();
+			driver.get(AppPath);
+	}
+	
 	@Test
   public void f() {
 
 System.setProperty("webdriver.chrome.driver", ChrPath);
 try
 {
-	driver=new ChromeDriver();
-	driver.get(AppPath);
-driver.manage().window().maximize();
+init();
+	driver.manage().window().maximize();
 Thread.sleep(2000);
+driver.close();
 }
 
 catch(Exception e)
